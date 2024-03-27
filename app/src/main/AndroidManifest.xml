@@ -21,13 +21,7 @@
             android:name=".ui.FavoriteGithubUserActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.FavoritGithubUserActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.DetailGithubUserActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.MenuSearchActivity"
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
