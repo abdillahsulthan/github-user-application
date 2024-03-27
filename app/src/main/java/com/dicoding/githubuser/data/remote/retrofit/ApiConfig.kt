@@ -10,13 +10,12 @@ class ApiConfig {
     companion object{
 
         private val BASE_URL: String = BuildConfig.BASE_URL
-        private val TOKEN: String = BuildConfig.API_KEY
 
         fun getApiService(): ApiService {
             val authInterceptor = Interceptor { chain ->
                 val req = chain.request()
                 val requestHeaders = req.newBuilder()
-                    .addHeader("Authorization", "token $TOKEN")
+                    .addHeader("Authorization", "token XXXXXX")
                     .build()
                 chain.proceed(requestHeaders)
             }
