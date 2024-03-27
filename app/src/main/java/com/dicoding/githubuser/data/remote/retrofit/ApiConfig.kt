@@ -15,7 +15,7 @@ class ApiConfig {
             val authInterceptor = Interceptor { chain ->
                 val req = chain.request()
                 val requestHeaders = req.newBuilder()
-                    .addHeader("Authorization", "token XXXXXX")
+                    .addHeader("Authorization", "token XXXXXX") // insert your github personal token here
                     .build()
                 chain.proceed(requestHeaders)
             }
