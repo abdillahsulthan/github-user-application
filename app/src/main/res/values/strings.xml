@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Github User</string>
+    <string name="users_name">Nama User</string>
+    <string name="search_menu">search</string>
+    <string name="searchbar_hint">Masukkan Nama User</string>
+    <string name="user_follower">%d Followers</string>
+    <string name="user_following">%d Following</string>
+    <string name="tab_1">Follower</string>
+    <string name="tab_2">Following</string>
+    <string name="favorite_menu">favorite</string>
+    <string name="dark_mode">Dark Mode</string>
+</resources>
