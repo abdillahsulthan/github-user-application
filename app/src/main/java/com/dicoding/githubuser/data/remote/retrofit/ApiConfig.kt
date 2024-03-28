@@ -10,12 +10,13 @@ class ApiConfig {
     companion object{
 
         private val BASE_URL: String = BuildConfig.BASE_URL
+        private val TOKEN: String = BuildConfig.TOKEN
 
         fun getApiService(): ApiService {
             val authInterceptor = Interceptor { chain ->
                 val req = chain.request()
                 val requestHeaders = req.newBuilder()
-                    .addHeader("Authorization", "token XXXXXX") // insert your github personal token here
+                    .addHeader("Authorization", "token $TOKEN")
                     .build()
                 chain.proceed(requestHeaders)
             }
